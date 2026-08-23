@@ -8,7 +8,7 @@
   font-style: normal;
 }
 
-#portfolio{
+#Home{
     text-align: center;
     font-size: 350%;
     margin-top: 5px;
@@ -20,12 +20,11 @@
 }
 
 nav{
+    display: flex;
+    justify-content: space-evenly;
     font-size: 200%;
     margin-bottom: 80px;
-    border-style: solid;
-    border-width: 0;
-    border-top-width:2px ;
-    border-bottom-width: 2px;
+    
     padding: 2px;
 
 }
