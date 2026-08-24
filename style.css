@@ -1,4 +1,4 @@
-*{
+*{  
     color: white;
     margin: 0;
     padding: 0;
@@ -8,61 +8,84 @@
   font-style: normal;
 }
 
-#Home{
-    text-align: center;
-    font-size: 350%;
-    margin-top: 5px;
-    margin-bottom: 0px;
-    text-decoration: none;
-}
-#portfoliotext{
-    text-decoration: none;
-}
-
-nav{
+nav {
     display: flex;
-    justify-content: space-evenly;
-    font-size: 200%;
-    margin-bottom: 80px;
-    
-    padding: 2px;
-
+    justify-content: space-around;
+    font-size: 223%;
+    padding-top:4px;
 }
 .navcontent{
-    margin-right: 60px;
-    margin-left: 22px;
-    text-decoration: none;
-
+    padding: 10px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: rgb(30, 30, 30);
 }
-
-#profilephotodiv{
-    display: inline-block;
-}
-#profilephoto{
+.navcontent:hover {
+    transition: all;
+    transition-duration: 1s;
+    transition-delay: 0.1s;
+    font-size: 41px;
+    border-style: solid;
+    border-color: #a1a1a1;
+    border-radius: 30px;
+    background-color: #655e5e;
+    color: goldenrod;
     
-        height: 280px;
-        border-width: 10px;
-        border-color: #4c7474;
-        border-style: solid;
-        border-radius: 20%;
-        margin-left: 1150px;
+    
 }
-
-#fullname{
-    font-size: 180px;
-    margin-right: 200px;
-    padding-left: 50px;
-    display: inline;
+#hello{
+    font-size: 35px;
+    display: inline-block;
+    margin-left: 141px;
+    margin-top: 86px;
+    margin-bottom: 25px;
+}
+#name{
+    font-size: 121px;
+    display:inline;
+    margin-left: 124px;
+    margin-top: 9px;
+    margin-bottom: 100px;
+}
+#name:hover{
+    color: goldenrod;
+    font-size: 122px;
+    display:inline;
+    margin-left: 124px;
+    margin-top: 9px;
+    margin-bottom: 100px;
+    transition: all;
+    transition-delay: 0.2;
+    transition-duration: 0.75s;
+}
+#photodiv{
+    display: inline-block;
     position: absolute;
-    top: 300px;
-    font-family: "Lobster Two", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-
+    top: 136px;
+    right: 150px;
 }
-#hellomsg{
-    font-size: 50px;
-    padding-left: 70px;
-    display: block;
-  
+#photo{
+    height: 310px;
+    border-style: solid;
+    border-color: #a1a1a1;
+    border-radius: 87px;
+    border-width: 7px;
+}
+#photo:hover{
+    height: 320px;
+    border-style: solid;
+    border-color: #a1a1a1;
+    border-radius: 87px;
+    border-width: 9px;
+    transition: all;
+    transition-delay: 0.1s;
+    transition-duration: 1s;
+}
+#About{
+    margin-top: 1000px;
+}
+#hero{
+    position: absolute;
+    top: 104px;
+    left: 8px;
 }
