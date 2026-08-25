@@ -3,12 +3,13 @@
     margin: 0;
     padding: 0;
     background-color:rgb(30, 30, 30);
-    font-family: "Share Tech", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    
 }
 
 nav {
+    width: 100%;
+    position: absolute;
+    top: 3px;
     display: flex;
     justify-content: space-around;
     font-size: 223%;
@@ -22,17 +23,17 @@ nav {
 }
 .navcontent:hover {
     transition: all;
-    transition-duration: 1s;
-    transition-delay: 0.1s;
+    transition-duration: 0.75s;
+    transition-delay: 0.05s;
     font-size: 41px;
     border-style: solid;
-    border-color: #a1a1a1;
+    border-color: goldenrod;
     border-radius: 30px;
     background-color: #655e5e;
-    color: goldenrod;
     
     
 }
+
 #hello{
     font-size: 35px;
     display: inline-block;
@@ -41,13 +42,16 @@ nav {
     margin-bottom: 25px;
 }
 #name{
+    
     font-size: 121px;
     display:inline;
     margin-left: 124px;
     margin-top: 9px;
-    margin-bottom: 100px;
+    
+    
 }
 #name:hover{
+
     color: goldenrod;
     font-size: 122px;
     display:inline;
@@ -57,11 +61,12 @@ nav {
     transition: all;
     transition-delay: 0.2;
     transition-duration: 0.75s;
+    
 }
 #photodiv{
     display: inline-block;
     position: absolute;
-    top: 136px;
+    top: 240px;
     right: 150px;
 }
 #photo{
@@ -74,18 +79,50 @@ nav {
 #photo:hover{
     height: 320px;
     border-style: solid;
-    border-color: #a1a1a1;
+    border-color: goldenrod;
     border-radius: 87px;
     border-width: 9px;
     transition: all;
     transition-delay: 0.1s;
     transition-duration: 1s;
 }
-#About{
-    margin-top: 1000px;
-}
 #hero{
     position: absolute;
-    top: 104px;
+    top: 230px;
     left: 8px;
 }
+#About {
+    margin-top: 780px;
+    margin-left: 60px;
+}
+
+.subheading{
+    
+  font-size: 1.25em;
+  text-decoration: underline;
+
+}
+
+.container{
+    margin-top: 75px;
+    margin-left: 60px;
+}
+#footer{
+    text-align: center;
+    margin: 50px;
+    margin-bottom: 5px;
+}
+.heading{
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: white;
+    margin-bottom: 25px;
+}
+.content{
+    font-size: 27px;
+    width: 1000px;
+    margin-left: 65px;
+    
+}
+
+
