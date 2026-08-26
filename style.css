@@ -3,7 +3,10 @@
     margin: 0;
     padding: 0;
     background-color:rgb(30, 30, 30);
-    
+    font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 nav {
@@ -47,13 +50,14 @@ nav {
     display:inline;
     margin-left: 124px;
     margin-top: 9px;
-    
+    font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
     
 }
 #name:hover{
-
     color: goldenrod;
-    font-size: 122px;
+    font-size: 124px;
     display:inline;
     margin-left: 124px;
     margin-top: 9px;
@@ -100,13 +104,25 @@ nav {
     
   font-size: 1.25em;
   text-decoration: underline;
-
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .container{
     margin-top: 75px;
     margin-left: 60px;
 }
+.container:hover{
+    .heading{
+        color: goldenrod;
+        text-decoration: underline;
+        transition-delay: 0.2s;
+        transition-duration: 0.75s;
+    }
+}
+
 #footer{
     text-align: center;
     margin: 50px;
@@ -114,15 +130,71 @@ nav {
 }
 .heading{
     font-size: 50px;
-    text-decoration: underline;
     text-decoration-color: white;
     margin-bottom: 25px;
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.heading:hover{
+    color: goldenrod;
+    transition: all;
+    transition-duration: 0.75s;
+    transition-delay: 0.1s;
 }
 .content{
     font-size: 27px;
     width: 1000px;
     margin-left: 65px;
+    text-decoration: none;
     
 }
 
-
+.highlight{
+    text-decoration: none;
+}
+.highlight:hover{
+    color: goldenrod;
+    text-decoration: underline;
+    transition: all;
+    transition-duration: 0.75s;
+}
+.heading div{
+    text-decoration: none;
+}
+.subcontainer-heading{
+font-size: 1.25em;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.subcontainer-heading:hover{
+color: goldenrod;
+}
+.subcontainer-subheading{
+font-size: 1.25em;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.subcontainer:hover{
+    .subcontainer-heading{
+        color: goldenrod;
+        text-decoration: underline;
+        transition: all;
+        transition-delay: 0.2s;
+        transition-duration: 0.75s;
+    }
+}
+.subsubcontainer:hover{
+    .subcontainer-subheading{
+        color: goldenrod;
+        text-decoration: underline;
+        transition: all;
+        transition-delay: 0.2s;
+        transition-duration: 0.75s;
+    }
+}
