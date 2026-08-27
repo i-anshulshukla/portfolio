@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Anshul Shukla - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c139677159.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
-
-
 <body>
 
-
     <header>
-
-
         <nav id="home">
             <a class="navcontent" href="#home">Home</a>
             <a class="navcontent" href="#About">About</a>
@@ -27,118 +20,129 @@
             <a class="navcontent" href="#Projects">Projects</a>
             <a class="navcontent" href="#Profiles">Profiles</a>
             <a class="navcontent" href="#Contact">Contact</a>
-            
         </nav>
-
-
     </header>
 
-
     <main>
-    <div id="hero">
-        <div id="hello">Hello , I am</div><br>
-        <div id="name">Anshul Shukla</div>
+        <section id="hero">
+            <div id="hero-text">
+                <div id="hello">Hello, I am</div>
+                <div id="name">Anshul Shukla</div>
+            </div>
+            <div id="photodiv">
+                <img id="photo" src="images/anshul.png" alt="Anshul Shukla">
+            </div>
+        </section>
+
+        <div id="whole">
+            <section class="container" id="About">
+                <h1 class="heading">About Me</h1>
+                <div class="content"> 
+                    I am a first-year <span class="highlight"><a class="highlight" href="#" target="_blank">Computer Science & Engineering (Data Science)</a></span> student at 
+                    <a class="highlight" href="https://www.glbitm.org/" target="_blank">GL Bajaj Institute of Technology & Management</a> with a strong drive for software development and modern technology. Driven by a lifelong curiosity for how complex digital systems work, I focus on building strong technical foundations and turning ideas into real-world applications.
+                    <br><br>
+                    <div class="subcontainer"> 
+                        <span class="subcontainer-heading">My core technical focus spans both algorithm design and web development:</span>
+                        <br><br>
+                        <div class="subsubcontainer"> 
+                            <span class="subcontainer-subheading">Data Structures & Algorithms:</span> Actively solving algorithmic challenges across platforms like LeetCode, CodeChef, and CodeForces using C++ to build analytical and problem-solving skills.<br>
+                            <span>Check out the progress:</span>
+                            <a class="icon_link" href="https://github.com/i-anshulshukla/DSA-in-cpp.git" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                        </div>
+                        <br>
+                        <div class="subsubcontainer"> 
+                            <span class="subcontainer-subheading">Full-Stack Web Development:</span> Crafting clean, responsive layouts using HTML and CSS, with project experience including a Myntra homepage clone and a custom personal portfolio site.<br>
+                            <span>Check out the progress:</span>
+                            <a class="icon_link" href="https://github.com/i-anshulshukla/web-dev.git" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                        </div>
+                    </div>
+                    <br>
+                    To balance continuous progress across both fields, I follow a strict daily time-allocation system—splitting my focus between core software development, theoretical algorithms, and practical competitive programming.
+                </div>
+            </section>
+
+
+            <section class="container" id="Skills">
+                <h1 class="heading">Skills</h1>
+                <div class="content"> 
+                    <div class="subcontainer"><span class="subcontainer-heading">Languages:</span> C++, HTML5, CSS3</div>
+                    <div class="subcontainer"><span class="subcontainer-heading">Tools & Environment:</span> Git, GitHub, Visual Studio Code</div>
+                    <div class="subcontainer"><span class="subcontainer-heading">Problem-Solving & Coding Platforms:</span> LeetCode, CodeChef, CodeForces, Codolio</div>
+                </div>
+            </section>
+
+
+            <section class="container" id="Projects">
+                <h1 class="heading">Projects</h1>
+                <div class="content"> 
+                    <div class="subcontainer">
+                        <span class="subcontainer-heading">My Project 1:</span><br>
+                        <span class="project_title">Personal Portfolio Website</span><br>
+                        <strong>Tech Stack:</strong> HTML5, CSS3, Git, GitHub<br>
+                        <strong>Description:</strong> Designed and developed a clean, responsive personal portfolio website to showcase my technical skills, academic journey, and competitive programming profiles. Focused on responsive layout structure, clean UI design, and optimal cross-device usability.<br>
+                        <span>GitHub:</span><a class="icon_link" href="https://github.com/i-anshulshukla/portfolio.git" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                        <span>Live Demo:</span><a class="icon_link" href="https://i-anshulshukla.github.io/portfolio/" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <br>
+                    <div class="subcontainer">
+                        <span class="subcontainer-heading">My Project 2:</span><br>
+                        <span class="project_title">Myntra Homepage Clone</span><br>
+                        <strong>Tech Stack:</strong> HTML5, CSS3<br>
+                        <strong>Description:</strong> Built a front-end replica of the Myntra e-commerce homepage to practice modern CSS layouts, precise element alignment, dynamic styling, and UI component structuring.<br>
+                        <span>GitHub:</span><a class="icon_link" href="https://github.com/i-anshulshukla/myntra-clone-project.git" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="container" id="Profiles">
+                <h1 class="heading">Profiles</h1>
+                <div class="content">
+                    <div id="get_in_touch">
+                        <a class="social_link" href="https://github.com/i-anshulshukla" target="_blank">
+                            <i class="fa-brands fa-square-github"></i><span class="link_text">GitHub</span>
+                        </a>
+                        <a class="social_link" href="https://www.linkedin.com/in/ianshulshukla" target="_blank">
+                            <i class="fa-brands fa-square-linkedin"></i><span class="link_text">LinkedIn</span>
+                        </a>
+                        <a class="social_link" href="https://leetcode.com/u/i_anshulshukla/" target="_blank">
+                            <i class="fa-brands fa-leetcode"></i><span class="link_text">LeetCode</span>
+                        </a>
+                        <a class="social_link" href="https://www.codechef.com/users/i_anshulshukla" target="_blank">
+                            <img class="codechef" width="30" height="30" src="https://www.svgrepo.com/show/305880/codechef.svg" alt="CodeChef"><span class="link_text">CodeChef</span>
+                        </a>
+                        <a class="social_link" href="https://codeforces.com/profile/i_anshulshukla" target="_blank">
+                            <img width="30" height="30" src="https://cdn.iconscout.com/icon/free/png-512/free-code-forces-logo-icon-svg-download-png-3029920.png?f=webp&w=512" alt="Codeforces"><span class="link_text">Codeforces</span>
+                        </a>
+                        <a class="social_link" href="https://codolio.com/profile/i-anshulshukla" target="_blank">
+                            <img width="30" height="30" src="https://codolio.com/codolio_assets/codolio.svg" alt="Codolio"><span class="link_text">Codolio</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="container" id="Contact">
+                <h1 class="heading">Get In Touch</h1>
+                <div class="content">
+                    I am always open to discussing new projects, tech collaborations, or software development opportunities. Feel free to reach out or connect with me across my profiles!
+                    <br><br>
+                    <div class="contact-item">
+                        <a href="mailto:its.anshul.shukla@gmail.com"><i class="fa-regular fa-envelope"></i><span class="left">its.anshul.shukla@gmail.com</span></a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Greater+Noida+Uttar+Pradesh" target="_blank"><i class="fa-solid fa-location-dot"></i><span class="left">Greater Noida, Uttar Pradesh, India</span></a>
+                    </div>
+                </div> 
+            </section>
         </div>
-        <div id="photodiv"><image id="photo" src="images/anshul.png"></image></div>
-        
-        
-<div id="whole">
-    <section class="container" id="About"><h1 class="heading">About Me</h1><div class="content"> I am a first-year <span class="highlight"><a class="highlight" href="#" target="_blank">Computer Science & Engineering (Data Science) </a></span> student at<br> <a class="highlight" href="https://www.glbitm.org/" target="_blank"> GL Bajaj Institute of Technology & Management</a> with a strong drive for software development and modern technology. Driven by a lifelong curiosity for how complex digital systems work, I focus on building strong technical foundations and turning ideas into real-world applications.
-<br>
-<br>
-<section class="subcontainer"> <span class="subcontainer-heading">My core technical focus spans both algorithm design and web development:</span>
-<br><br>
+    </main>
 
-<section class="subsubcontainer"> <span class="subcontainer-subheading"> Data Structures & Algorithms:</span> Actively solving algorithmic challenges across platforms like LeetCode, CodeChef, and CodeForces using C++ to build analytical and problem-solving skills.<br>
-<span>Check out the progress :</span><a id="icon_link" href="https://github.com/i-anshulshukla/DSA-in-cpp.git" target="_blank"><i class="fa-brands fa-square-github"></i></a></section>
-<br>
-
-<section class="subsubcontainer"> <span class="subcontainer-subheading">Full-Stack Web Development:</span> Crafting clean, responsive layouts using HTML and CSS, with project experience including a Myntra homepage clone and a custom personal portfolio site.<br>
-<span>Check out the progress :</span><a id="icon_link" href="https://github.com/i-anshulshukla/web-dev.git" target="_blank"><i class="fa-brands fa-square-github"></i></a></section></section>
-<br>
-
-To balance continuous progress across both fields, I follow a strict daily time-allocation system—splitting my focus between core software development, theoretical algorithms, and practical competitive programming.</div></section>
-
-
-
-
-    <section class="container" id="Skills"><h1 class="heading">Skills</h1>
-        <div class="content"> <section class="subcontainer"> <span class="subcontainer-heading"  >Languages:</span> C++, HTML5, CSS3</section>
-
- <section class="subcontainer"> <span class="subcontainer-heading" >Tools & Environment:</span> Git, GitHub, Visual Studio Code</section>
-
-<section class="subcontainer"><span class="subcontainer-heading" >Problem-Solving & Coding Platforms:</span> LeetCode, CodeChef, CodeForces, Codolio</div></section>
-
-
-
-
-
-    <section class="container" id="Projects"><h1 class="heading">Projects</h1>
-        <div class="content"> <section class="subcontainer"><span class="subcontainer-heading" >My Project 1:</span><br><span class="project_title"> Personal Portfolio Website</span>
-<br>
-Tech Stack: HTML5, CSS3, Git, GitHub
-<br>
-Description: Designed and developed a clean, responsive personal portfolio website to showcase my technical skills, academic journey, and competitive programming profiles. Focused on responsive layout structure, clean UI design, and optimal cross-device usability.<br>
-<span>GitHub :</span><a id="icon_link" href="https://github.com/i-anshulshukla/portfolio.git" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-<span>Live Demo :</span><a id="icon_link" href="https://i-anshulshukla.github.io/portfolio/" target="_blank"><i class="fa-brands fa-square-github"></i></a></section><br>
-
-<section class="subcontainer"><span class="subcontainer-heading" >My Project 2:</span><br><span class="project_title">Myntra Homepage Clone</span>
-<br>
-Tech Stack: HTML5, CSS3
-<br>
-Description: Built a front-end replica of the Myntra e-commerce homepage to practice modern CSS layouts, precise element alignment, dynamic styling, and UI component structuring.<br>
-<span>GitHub :</span><a id="icon_link" href="https://github.com/i-anshulshukla/myntra-clone-project.git" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-<!-- <span>Live Demo :</span><a id="icon_link" href="https://github.com/i-anshulshukla/DSA-in-cpp.git" target="_blank"><i class="fa-brands fa-square-github"></i></a> -->
-</div></section></section>
-
-<section class="container" id="Profiles"><h1 class="heading"> Profiles</h1>
-    <div class="content">
-
-<div id="get_in_touch">
-
- 
-<a class="social_link" href="https://github.com/i-anshulshukla" target="_blank"><i class="fa-brands fa-square-github"></i><span class="link_text">GitHub</span></a>
-
-
-<a class="social_link" href="https://www.linkedin.com/in/ianshulshukla" target="_blank"><i class="fa-brands fa-square-linkedin"></i><span class="link_text">LinkedIn</span></a>
-
- 
- <a class="social_link" href="https://leetcode.com/u/i_anshulshukla/" target="_blank"><i class="fa-brands fa-leetcode"></i><span class="link_text">LeetCode</span></a>
-
-
- 
- <a class="social_link" id="codechef_special" href="https://www.codechef.com/users/i_anshulshukla" target="_blank"><img class="codechef" width="35" height="35" src="https://www.svgrepo.com/show/305880/codechef.svg" alt="codechef"/><span class="link_text" id="social_text">CodeChef</span></a>
-
-
- 
- <a class="social_link" href="https://codeforces.com/profile/i_anshulshukla" target="_blank"><img width="34" height="34" src="https://cdn.iconscout.com/icon/free/png-512/free-code-forces-logo-icon-svg-download-png-3029920.png?f=webp&w=512" alt="external-codeforces-programming-competitions-and-contests-programming-community-logo-bold-tal-revivo"/><span class="link_text" id="social_text">Codeforces</span></a>
-
-
-
-<a class="social_link" id="codolio_special" href="https://codolio.com/profile/i-anshulshukla" target="_blank"><img width="35" height="35" src="https://codolio.com/codolio_assets/codolio.svg"/><span class="link_text" id="social_text">Codolio</span></a></div></div>
-</section>
-
-
-
-    <section class="container" id="Contact"><h1 class="heading"> Get In Touch</h1>
-<div class="content">
-I am always open to discussing new projects, tech collaborations, or software development opportunities. Feel free to reach out or connect with me across my profiles!
-<br><br>
-
-
- <a href="mailto:its.anshul.shukla@gmail.com"><i class="fa-regular fa-envelope"></i><span class="left">its.anshul.shukla@gmail.com</span></a>
-<br>
- <a href="https://www.google.com/maps/dir/?api=1&destination=Greater+Noida+Uttar+Pradesh" target="_blank"><i class="fa-solid fa-location-dot"></i><span class="left">Greater Noida, Uttar Pradesh, India</span></a>
-</div> 
-</section>
-</div>
-</main>
-<footer>
-    <div id="footer">
-       © 2026 - Made with ♡ by Anshul Shukla
-    </div>
-</footer>
+    <footer>
+        <div id="footer">
+            © 2026 - Made with ♡ by Anshul Shukla
+        </div>
+    </footer>
 
 </body>
 </html>
-

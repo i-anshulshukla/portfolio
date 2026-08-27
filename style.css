@@ -1,305 +1,311 @@
-*{
-    scroll-behavior: smooth;
-    color: white;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color:rgb(30, 30, 30);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(30, 30, 30);
+    color: white;
     font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(30, 30, 30, 0.95);
+    backdrop-filter: blur(5px);
+    padding: 10px 0;
 }
 
 nav {
-    width: 100%;
-    position: absolute;
-    top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.navcontent {
+    color: white;
+    font-size: 1.1rem;
+    padding: 8px 18px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.navcontent:hover {
+    font-size: 1.1rem;
+    border-color: goldenrod;
+    background-color: #655e5e;
+}
+
+
+#hero {
     display: flex;
     justify-content: space-around;
-    font-size: 223%;
-    padding-top:4px;
-}
-.navcontent{
-    padding: 10px;
-    border-style: solid;
-    border-radius: 30px;
-    border-color: rgb(30, 30, 30);
-}
-.navcontent:hover {
-    transition: all;
-    transition-duration: 0.75s;
-    transition-delay: 0.05s;
-    font-size: 41px;
-    border-style: solid;
-    border-color: goldenrod;
-    border-radius: 30px;
-    background-color: #655e5e;
-    
-    
+    align-items: center;
+    min-height: calc(100vh - 70px);
+    padding: 40px 10%;
+    gap: 30px;
 }
 
-#hello{
-    font-size: 35px;
-    display: inline-block;
-    margin-left: 141px;
-    margin-top: 86px;
-    margin-bottom: 25px;
+#hero-text {
+    flex: 1;
 }
-#name{
-    
-    font-size: 121px;
-    display:inline;
-    margin-left: 124px;
-    margin-top: 9px;
+
+#hello {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+#name {
+    font-size: 6.5rem; 
     font-family: "Lobster Two", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-    
-}
-#name:hover{
-    color: goldenrod;
-    font-size: 124px;
-    display:inline;
-    margin-left: 124px;
-    margin-top: 9px;
-    margin-bottom: 100px;
-    transition: all;
-    transition-delay: 0.2;
-    transition-duration: 0.75s;
-    
-}
-#photodiv{
+    font-weight: 400;
+    line-height: 1.1;
     display: inline-block;
-    position: absolute;
-    top: 240px;
-    right: 150px;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
-#photo{
-    height: 310px;
-    border-style: solid;
-    border-color: #a1a1a1;
-    border-radius: 87px;
-    border-width: 7px;
+
+#name:hover {
+    color: goldenrod;
+    transform: scale(1.02);
 }
-#photo:hover{
-    height: 320px;
-    border-style: solid;
+
+#photodiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#photo {
+    width: 280px;
+    height: 320px; 
+    object-fit: cover;
+    border: 7px solid #a1a1a1;
+    border-radius: 28px; 
+    transition: all 0.5s ease;
+}
+
+#photo:hover {
     border-color: goldenrod;
-    border-radius: 87px;
-    border-width: 9px;
-    transition: all;
-    transition-delay: 0.1s;
-    transition-duration: 1s;
-}
-#hero{
-    position: absolute;
-    top: 230px;
-    left: 8px;
-}
-#About {
-    margin-top: 780px;
-    margin-left: 60px;
+    transform: scale(1.05);
 }
 
-.subheading{
-    
-  font-size: 1.25em;
-  text-decoration: underline;
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+
+#whole {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.container{
-    margin-top: 75px;
-    margin-left: 60px;
-}
-.container:hover{
-    .heading{
-        color: goldenrod;
-        text-decoration: underline;
-        transition-delay: 0.2s;
-        transition-duration: 0.75s;
-    }
+.container {
+    margin-top: 80px;
 }
 
-#footer{
-    text-align: center;
-    margin: 50px;
+.heading {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    font-family: "Playfair Display", serif;
+    transition: color 0.3s ease;
+}
+
+.container:hover .heading {
+    color: goldenrod;
+}
+
+.content {
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.highlight {
+    color: goldenrod;
+}
+
+.highlight:hover {
+    text-decoration: underline;
+}
+
+.subcontainer-heading,
+.subcontainer-subheading {
+    font-size: 1.3rem;
+    font-family: "Playfair Display", serif;
+    display: inline-block;
     margin-bottom: 5px;
 }
-.heading{
-    font-size: 50px;
-    text-decoration-color: white;
-    margin-bottom: 25px;
-    font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.heading:hover{
+
+.subcontainer:hover .subcontainer-heading,
+.subsubcontainer:hover .subcontainer-subheading {
     color: goldenrod;
-    transition: all;
-    transition-duration: 0.75s;
-    transition-delay: 0.1s;
-}
-.content{
-    font-size: 27px;
-    width: 1000px;
-    margin-left: 65px;
-    text-decoration: none;
-    
 }
 
-.highlight{
-    text-decoration: none;
+.icon_link {
+    font-size: 2rem;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 20px;
+    transition: color 0.3s ease;
 }
-.highlight:hover{
+
+.icon_link:hover {
     color: goldenrod;
-    text-decoration: underline;
-    transition: all;
-    transition-duration: 0.75s;
 }
-.heading div{
-    text-decoration: none;
+
+.project_title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: underline dotted;
+    text-underline-offset: 4px;
+    color: goldenrod;
 }
-.subcontainer-heading{
-font-size: 1.25em;
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+
+
+#get_in_touch {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
 }
-.subcontainer-heading:hover{
-color: goldenrod;
-}
-.subcontainer-subheading{
-font-size: 1.25em;
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.subcontainer:hover{
-    .subcontainer-heading{
-        color: goldenrod;
-        text-decoration: underline;
-        transition: all;
-        transition-delay: 0.2s;
-        transition-duration: 0.75s;
-    }
-}
-.subsubcontainer:hover{
-    .subcontainer-subheading{
-        color: goldenrod;
-        text-decoration: underline;
-        transition: all;
-        transition-delay: 0.2s;
-        transition-duration: 0.75s;
-    }
-}
-#icon_link {
-    font-size: 50px;
-    position: relative;
-    top: 12px;
-    left: 12px;
-    display: inline;
-    border-color: white;
-    border-style: solid;
-    border-radius: 8%;
-    border-color: rgb(30, 30, 30);
-    margin-right: 50px;
-}
-#icon_link:hover {
-     border-style: solid;
-     border-radius: 8%;
-     border-color: goldenrod;
-     transition: all;
-     transition-duration: 0.75s;
-}
-.project_title{
-    text-decoration-line: underline;
-    text-decoration-style: dotted;
-    text-underline-offset: 3px;
-}
-#get_in_touch{
+
+.social_link {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #2a2a2a;
+    transition: all 0.3s ease;
 }
-a{
-    text-decoration: none;
+
+.social_link i, 
+.social_link img {
+    font-size: 1.8rem;
+    margin-right: 10px;
 }
 
 .codechef {
-  background-color: #ffffff;
-  padding: 2px;          /* Distance between logo edge and white boundary */
-  border-radius: 8px;     /* Optional: rounds the corners of the white frame */
-  display: inline-block;  /* Ensures padding applies cleanly */
+    background-color: #ffffff;
+    padding: 2px;
+    border-radius: 4px;
 }
 
-
-
-.social_link{
-    margin-right: 200px;
-    margin-bottom: 50px;
-    border-style: solid;
-    border-color: rgb(30, 30, 30);
-    padding: 15px;
-    padding-bottom: 11.5px;
-    
-}
-.link_text{
-    margin-left: 10px;
-}
-#social_text{
-    position: relative;
-    bottom: 9px;
-    padding-bottom: -2px;
-}
-.social_link:hover{
-    border-style: solid;
+.social_link:hover {
     border-color: goldenrod;
-    border-radius: 3%;
-    transition: all;
-    transition-duration: 0.5s;
-    transition-delay: 0.1s;
     background-color: #655e5e;
+    transform: translateY(-3px);
+}
 
+.contact-item {
+    margin-top: 15px;
+}
 
-    
-}
-.social_link:hover .link_text{
-    
-    transition: all;
-    transition-duration: 0.5s;
-    transition-delay: 0.1s;
-    background-color: #655e5e;
-    
-
-    
-}
-#codechef_special{
-    position: relative;
-    left: 10px;
-}
-#codolio_special{
-    position: relative;
-    right: 15px;
-}
-.left{
+.left {
     margin-left: 10px;
-    text-decoration: underline;
-    text-decoration-color: rgb(30, 30, 30);
+    transition: color 0.3s ease;
 }
-.left:hover{
-    margin-left: 10px;
-    text-decoration: underline;
-    text-decoration-color: goldenrod;
+
+.left:hover {
     color: goldenrod;
-    transition: all;
-    transition-duration: 0.5s;
-    transition-delay: 0.1s;
+}
+
+
+#footer {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-top: 1px solid #333;
+}
+
+
+@media screen and (max-width: 1024px) {
+    #name {
+        font-size: 4.8rem; 
+    }
+
+    #photo {
+        width: 220px;
+        height: 255px;
+        border-radius: 22px;
+    }
+
+    .heading {
+        font-size: 2.3rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        gap: 8px;
+    }
+
+    .navcontent {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    #hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 20px;
+        min-height: auto;
+    }
+
+    #hello {
+        font-size: 1.5rem;
+    }
+
+    #name {
+        font-size: 3.6rem; 
+    }
+
+    #photo {
+        width: 180px;
+        height: 210px;
+        border-radius: 18px;
+    }
+
+    .container {
+        margin-top: 50px;
+    }
+
+    .heading {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .content {
+        font-size: 1rem;
+    }
+
+    #get_in_touch {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 12px;
+    }
+
+    .social_link {
+        padding: 10px;
+    }
 }
