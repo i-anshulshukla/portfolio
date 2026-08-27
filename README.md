@@ -14,6 +14,6 @@ This repository contains my personal portfolio website, which I am currently bui
 ---
 
 ## 📁 What's inside this repository?
-* **`index.html`** – The core webpage containing the layout, sections, and portfolio content.
+* **`index.html`** – The core webpage containing layout, sections, and portfolio content.
 * **`style.css`** – The stylesheet responsible for the overall visual design, colors, and media queries.
 * **`images/`** – Media files.
