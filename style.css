@@ -3,9 +3,11 @@
     margin: 0;
     padding: 0;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     background-color: rgb(30, 30, 30);
     color: white;
@@ -16,6 +18,8 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
 }
+
+
 header {
     position: sticky;
     top: 0;
@@ -24,6 +28,7 @@ header {
     backdrop-filter: blur(5px);
     padding: 10px 0;
 }
+
 nav {
     display: flex;
     justify-content: center;
@@ -32,6 +37,7 @@ nav {
     flex-wrap: wrap;
     padding: 0 10px;
 }
+
 .navcontent {
     color: white;
     font-size: 1.1rem;
@@ -40,11 +46,14 @@ nav {
     border-radius: 30px;
     transition: all 0.3s ease;
 }
+
 .navcontent:hover {
     font-size: 1.1rem;
     border-color: goldenrod;
     background-color: #655e5e;
 }
+
+
 #hero {
     display: flex;
     justify-content: space-around;
@@ -53,13 +62,16 @@ nav {
     padding: 40px 10%;
     gap: 30px;
 }
+
 #hero-text {
     flex: 1;
 }
+
 #hello {
     font-size: 2.2rem;
     margin-bottom: 10px;
 }
+
 #name {
     font-size: 6.5rem; 
     font-family: "Lobster Two", sans-serif;
@@ -68,15 +80,18 @@ nav {
     display: inline-block;
     transition: color 0.3s ease, transform 0.3s ease;
 }
+
 #name:hover {
     color: goldenrod;
     transform: scale(1.02);
 }
+
 #photodiv {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 #photo {
     width: 280px;
     height: 320px; 
@@ -85,41 +100,53 @@ nav {
     border-radius: 28px; 
     transition: all 0.5s ease;
 }
+
 #photo:hover {
     border-color: goldenrod;
     transform: scale(1.05);
 }
+
+
 #whole {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
 }
+
 .container {
     margin-top: 80px;
 }
+
 .heading {
     font-size: 2.8rem;
     margin-bottom: 20px;
     font-family: "Playfair Display", serif;
     transition: color 0.3s ease;
 }
+
 .container:hover .heading {
     color: goldenrod;
 }
+
 .content {
     font-size: 1.2rem;
     width: 100%;
 }
+
+
 a {
     color: white;
     text-decoration: none;
 }
+
 .highlight {
     color: goldenrod;
 }
+
 .highlight:hover {
     text-decoration: underline;
 }
+
 .subcontainer-heading,
 .subcontainer-subheading {
     font-size: 1.3rem;
@@ -127,10 +154,12 @@ a {
     display: inline-block;
     margin-bottom: 5px;
 }
+
 .subcontainer:hover .subcontainer-heading,
 .subsubcontainer:hover .subcontainer-subheading {
     color: goldenrod;
 }
+
 .icon_link {
     font-size: 2rem;
     vertical-align: middle;
@@ -138,9 +167,11 @@ a {
     margin-right: 20px;
     transition: color 0.3s ease;
 }
+
 .icon_link:hover {
     color: goldenrod;
 }
+
 .project_title {
     font-size: 1.4rem;
     font-weight: bold;
@@ -148,12 +179,15 @@ a {
     text-underline-offset: 4px;
     color: goldenrod;
 }
+
+
 #get_in_touch {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     margin-top: 30px;
 }
+
 .social_link {
     display: flex;
     align-items: center;
@@ -164,89 +198,113 @@ a {
     background-color: #2a2a2a;
     transition: all 0.3s ease;
 }
+
 .social_link i, 
 .social_link img {
     font-size: 1.8rem;
     margin-right: 10px;
 }
+
 .codechef {
     background-color: #ffffff;
     padding: 2px;
     border-radius: 4px;
 }
+
 .social_link:hover {
     border-color: goldenrod;
     background-color: #655e5e;
     transform: translateY(-3px);
 }
+
 .contact-item {
     margin-top: 15px;
 }
+
 .left {
     margin-left: 10px;
     transition: color 0.3s ease;
 }
+
 .left:hover {
     color: goldenrod;
 }
+
+
 #footer {
     text-align: center;
     padding: 40px 20px;
     margin-top: 60px;
     border-top: 1px solid #333;
 }
+
+
 @media screen and (max-width: 1024px) {
     #name {
         font-size: 4.8rem; 
     }
+
     #photo {
         width: 220px;
         height: 255px;
         border-radius: 22px;
     }
+
     .heading {
         font-size: 2.3rem;
     }
 }
+
+
 @media screen and (max-width: 768px) {
     nav {
         gap: 8px;
     }
+
     .navcontent {
         font-size: 0.9rem;
         padding: 6px 12px;
     }
+
     #hero {
         flex-direction: column-reverse;
         text-align: center;
         padding: 40px 20px;
         min-height: auto;
     }
+
     #hello {
         font-size: 1.5rem;
     }
+
     #name {
         font-size: 3.6rem; 
     }
+
     #photo {
         width: 180px;
         height: 210px;
         border-radius: 18px;
     }
+
     .container {
         margin-top: 50px;
     }
+
     .heading {
         font-size: 2rem;
         text-align: center;
     }
+
     .content {
         font-size: 1rem;
     }
+
     #get_in_touch {
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
         gap: 12px;
     }
+
     .social_link {
         padding: 10px;
     }
